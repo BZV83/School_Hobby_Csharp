@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Pricing Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+<br />
+<h4>Please enter how many hours you would like to be tutored about canyoneering:</h4>
+<br />
+<form>
+    <label>Hours:</label>
+    <input id="numHours" type="text" />
+    <br /><br />
+    <label>Non-negotiable Pay Rate</label>
+    <input type="text" value="$35/hr" readonly />
+    <br /><br />
+    <button type="button" onclick="calculateTotal()">Calculate</button>
+</form>
+<br />
+<h6 id="output"></h6>
